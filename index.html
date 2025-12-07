@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="sidebar">
+      <h2>Spotify Clone</h2>
+      <ul class="menu">
+        <li class="active">Home</li>
+        <li>Search</li>
+        <li>Your Library</li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="playlist">
+        <h3>Playlist</h3>
+        <ul id="song-list">
+          <!-- Song items added dynamically -->
+        </ul>
+      </div>
+      <div class="player">
+        <div class="current-song">
+          <img id="cover" src="" alt="cover" />
+          <div>
+            <h4 id="title">Song Title</h4>
+            <p id="artist">Artist</p>
+          </div>
+        </div>
+        <audio id="audio" src=""></audio>
+        <div class="controls">
+          <button id="prev">&#9664;</button>
+          <button id="play">&#9654;</button>
+          <button id="next">&#9654;&#9654;</button>
+        </div>
+        <input type="range" id="progress" value="0" min="0" max="100" />
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
